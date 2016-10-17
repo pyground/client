@@ -1,0 +1,21 @@
+.basic-cta {
+    display: block;
+    line-height: 16px;
+    color: rgba(240, 240, 240, 0.9);
+    text-decoration: none;
+    border: 0px;
+    border-radius: 3px;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.basic-cta:hover{
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+
+.basic-cta-md {
+    padding: 5px 15px;
+}

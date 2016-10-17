@@ -1,29 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+
+import BasicLink from '../cta/BasicLink'
+import BasicButton from '../cta/BasicButton'
+import AuthZoneContainer from '../../containers/AuthZoneContainer'
+
 import './Header.css';
 
-class App extends Component {
-  render() {
-    return (
-        <header className="header">
-          <div className="logo">
-            <span>
-              PyGround
-              <small>alpha</small>
-            </span>
-          </div>
-          <nav className="navigator">
-            <ul >
-              <li>Run</li>
-              <li>Share</li>
-              <li>New</li>
-            </ul>
-            <div className="user-profile">
-              <img src="https://avatars1.githubusercontent.com/u/10289071?v=3&s=466" alt="" />
+const Header = () => (
+    <header className="header">
+        <div className="container">
+            <div className="logo">
+                <span>
+                  PyGround
+                  <small>alpha</small>
+                </span>
             </div>
-          </nav>
-        </header>
-    );
-  }
-}
+            <nav className="navigator">
+                <ul>
+                    <li><BasicLink text="New" link="/" /></li>
+                    <li><BasicButton text="Share" onClick={null} /></li>
+                    <li><BasicButton text="Run" onClick={null} /></li>
+                </ul>
+                <AuthZoneContainer />
+            </nav>
+        </div>
+    </header>
+);
 
-export default App;
+export default Header;

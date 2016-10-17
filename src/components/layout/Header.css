@@ -1,7 +1,12 @@
 .header {
   background: #28324e;
-  display: flex;
-  flex-direction: row;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .header .logo, .header nav {
@@ -12,7 +17,7 @@
   font-size: 32px;
   font-weight: 600;
   position: relative;
-
+  line-height: 60px;
 }
 .header .logo span small {
   color: #fac51c;
@@ -21,7 +26,8 @@
   font-style: italic;
   position: absolute;
   bottom: -10px;
-  right: -20px
+  right: -20px;
+  line-height: 24px;
 }
 
 .header .navigator, .header .navigator ul {
@@ -33,9 +39,7 @@
 
 .header .navigator li {
   display: block;
-  margin: 5px 5px;
-  padding: 5px 15px;
-  background: #000;
+  margin: 5px 0 0 5px;
 }
 
 .header .navigator .user-profile {
