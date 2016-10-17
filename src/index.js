@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/layout/Header';
+import BaseView from './views/BaseView';
 import './index.css';
 
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+    <BaseView />,
+    document.getElementById('root')
 );

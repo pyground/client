@@ -1,0 +1,16 @@
+.container {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .code, .container .unit {
+    width: 50%;
+    flex-grow: 1
+}
+
+.container .unit h2 {
+    text-align: center;
+    opacity: 0.4;
+}
